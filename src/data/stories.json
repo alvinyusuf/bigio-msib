@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Filosofi Teras",
+    "author": "Henry Manampiring",
+    "category": "Self-dev",
+    "keyword": ["self-dev", "filosof"],
+    "status": "draft"
+  },
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "category": "Self-dev",
+    "keyword": ["self-dev", "habits"],
+    "status": "publish"
+  },
+  {
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "category": "Business",
+    "keyword": ["business", "startup"],
+    "status": "publish"
+  },
+  {
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "category": "Programming",
+    "keyword": ["programming", "code"],
+    "status": "draft"
+  },
+  {
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "category": "Productivity",
+    "keyword": ["productivity", "focus"],
+    "status": "publish"
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "category": "Programming",
+    "keyword": ["programming", "pragmatic", "software"],
+    "status": "draft"
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "category": "Psychology",
+    "keyword": ["psychology", "thinking", "cognitive"],
+    "status": "publish"
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "category": "History",
+    "keyword": ["history", "humankind", "evolution"],
+    "status": "publish"
+  },
+  {
+    "title": "The Power of Habit",
+    "author": "Charles Duhigg",
+    "category": "Self-dev",
+    "keyword": ["self-dev", "habit", "behavior"],
+    "status": "draft"
+  },
+  {
+    "title": "Grit: The Power of Passion and Perseverance",
+    "author": "Angela Duckworth",
+    "category": "Self-dev",
+    "keyword": ["self-dev", "grit", "perseverance", "passion"],
+    "status": "publish"
+  }
+]
