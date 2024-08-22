@@ -1,6 +1,18 @@
-import data from "../data/stories.json";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Table() {
+  const [data, setData] = useState([]);
+  const getStories = async () => {
+    await axios.get("http://127.0.0.1:5000/api/story").then((response) => {
+      setData(response.data);
+    });
+  };
+
+  useEffect(() => {
+    getStories();
+  }, [data]);
+
   let i = 1;
   return (
     <div className="relative h-96 overflow-auto shadow-md border-2 rounded-xl p-2 text-sm">
@@ -32,25 +44,29 @@ export default function Table() {
         </thead>
         <tbody>
           {data.map((d, key) => (
-            <tr key={key} className="border-b-2">
+            <tr key={key} className="border-b-2 text-center">
               <td className="px-2 py-1 w-10">{i++}</td>
               <td className="px-2 py-1 w-64">{d.title}</td>
               <td className="px-2 py-1 w-36">{d.author}</td>
               <td className="px-2 py-1 w-24">{d.category}</td>
               <td className="px-2 py-1 w-64">
-                <div className="flex flex-wrap gap-1">
-                  {d.keyword.map((keyword, key) => (
+                <div className="flex flex-wrap justify-center gap-1">
+                  {d.tags.map((tag, key) => (
                     <p
                       key={key}
                       className="bg-slate-200 rounded-full px-2 py-1"
                     >
-                      {keyword}
+                      {tag}
                     </p>
                   ))}
                 </div>
               </td>
               <td className="px-2 py-1 w-24">
-                <p className={`${d.status == 'publish' ? 'bg-green-300' : 'bg-red-300'} rounded-full px-3 py-1`}>
+                <p
+                  className={`${
+                    d.status == "publish" ? "bg-green-300" : "bg-red-300"
+                  } rounded-full px-3 py-1`}
+                >
                   {d.status}
                 </p>
               </td>
