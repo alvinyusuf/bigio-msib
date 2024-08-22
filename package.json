@@ -12,6 +12,7 @@
   "dependencies": {
     "@ckeditor/ckeditor5-react": "^9.0.0",
     "@yaireo/tagify": "^4.27.0",
+    "axios": "^1.7.4",
     "ckeditor5": "^43.0.0",
     "primereact": "^10.8.2",
     "quill": "^2.0.2",
