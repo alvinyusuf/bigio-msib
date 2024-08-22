@@ -65,7 +65,7 @@ export default function AddStory() {
               </div>
             </div>
             <div className="flex justify-end">
-              <a href="" className="font-medium text-white bg-orange-500 rounded-xl p-2">
+              <a href="/add-chapter" className="font-medium text-white bg-orange-500 rounded-xl p-2">
                 + Add Chapter
               </a>
             </div>
